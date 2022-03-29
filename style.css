@@ -1,0 +1,168 @@
+/*
+1. Posicionamiento  --> static, absolute, relative, fixed
+2. Modelo caja (Box Model)  --> margin, border, padding, content
+3. Tipografía  --> tipos, tamaños de fuente, etc
+4. Estilos visuales --> box-shadow, border-radius, gradient, etc
+5. Otros --> reglas CSS y más
+*/
+:root {
+  /* Crea tus variables */
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  /* background-color: rosybrown; */
+}
+
+.main-section {
+  width: 800px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.img-container {
+  width: 152px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  margin-bottom: 2px;
+}
+
+.img-container-double {
+  width: 152px;
+  height: 188px;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  margin-bottom: 2px;
+}
+
+.img-container-white {
+  width: 152px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  margin-bottom: 2px;
+  border: 1px solid black;
+}
+
+.img-container-black {
+  width: 152px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  margin-bottom: 2px;
+  background-color: rgb(15, 15, 15);
+}
+
+.img-container .photo {
+  width: 152px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-container-white .photo-play-white {
+  width: 135px;
+  height: 135px;
+  margin: 4px auto 0 auto;
+  object-fit: cover;
+  border: solid 1px black;
+}
+
+.img-container-black .photo-play-black {
+  width: 135px;
+  height: 135px;
+  object-fit: cover;
+  margin: 5px auto 0 auto;
+  /* border: solid 1px white; */
+}
+
+.img-container-white .text-container-white {
+  height: 40px;
+  width: 100%;
+  z-index: 2;
+}
+
+.img-container-black .text-container-black {
+  height: 40px;
+  width: 100%;
+  z-index: 2;
+  color: white;
+}
+
+.img-container-white .text-container-white p {
+  margin-left: 6px;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.img-container-white .text-container-white h2 {
+  margin-left: 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.img-container-black .text-container-black p {
+  margin-left: 8px;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.img-container-black .text-container-black h2 {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.play-controls {
+  position: relative;
+  bottom: 29px;
+  width: 100%;
+  height: 68px;
+}
+
+.img-container .spotify-code {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  bottom: 38px;
+}
+
+.recorted {
+  flex-direction: column;
+  position: relative;
+  bottom: 9px;
+}
+
+.recorted-square {
+  flex-direction: column;
+}
+
+.img-container-hor {
+  width: 188px;
+  height: 152px;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+}
+
+.img-container-hor .photo {
+  width: 188px;
+  height: 152px;
+  object-fit: cover;
+}
